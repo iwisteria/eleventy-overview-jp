@@ -904,34 +904,35 @@
 ├── .eleventy.js           # 11ty設定ファイル
 └── package.json</div>
 
-                        <div class="step-subtitle">方法1: コマンドでフォルダを作成（推奨）</div>
+                        <div class="step-subtitle">方法1: コマンドでフォルダを自分で作成（推奨）</div>
                         <div class="code-block">
-                            <div class="code-title">必要なフォルダを一括作成</div>
+                            <div class="code-title">必要なフォルダを自分で一括作成</div>
                             <div class="code-content">mkdir -p src/_includes src/posts</div>
                         </div>
                         <div class="info">
                             <strong>💡 コマンド解説：</strong><br>
                             • <code>mkdir</code>：フォルダ作成コマンド<br>
                             • <code>-p</code>：親フォルダも一緒に作成（srcフォルダがない場合も自動作成）<br>
-                            • <code>src/_includes src/posts</code>：2つのフォルダを同時に作成
+                            • <code>src/_includes src/posts</code>：2つのフォルダを同時に作成<br>
+                            • <strong>このコマンドを実行すると、あなた自身でフォルダを作成することになります</strong>
                         </div>
 
-                        <div class="step-subtitle">方法2: VS Codeでフォルダを作成</div>
+                        <div class="step-subtitle">方法2: VS Codeでフォルダを自分で作成</div>
                         <ol style="margin-left: 30px; padding-left: 20px;">
                             <li style="margin-bottom: 16px;">
                                 <strong>VS Codeでプロジェクトフォルダを開く</strong><br>
                                 VS Codeを起動 → "File" → "Open Folder" → 作成したmy-websiteフォルダを選択
                             </li>
                             <li style="margin-bottom: 16px;">
-                                <strong>srcフォルダを作成</strong><br>
+                                <strong>srcフォルダを自分で作成</strong><br>
                                 左のファイルエクスプローラーで右クリック → "New Folder" → "src" と入力
                             </li>
                             <li style="margin-bottom: 16px;">
-                                <strong>_includesフォルダを作成</strong><br>
+                                <strong>_includesフォルダを自分で作成</strong><br>
                                 srcフォルダを右クリック → "New Folder" → "_includes" と入力
                             </li>
                             <li style="margin-bottom: 16px;">
-                                <strong>postsフォルダを作成</strong><br>
+                                <strong>postsフォルダを自分で作成</strong><br>
                                 srcフォルダを右クリック → "New Folder" → "posts" と入力
                             </li>
                         </ol>
@@ -943,7 +944,7 @@
                             • フォルダ名のスペルミスに注意してください（postsの「s」を忘れがちです）
                         </div>
 
-                        <div class="step-subtitle">5. 11ty設定ファイルの作成</div>
+                        <div class="step-subtitle">5. 11ty設定ファイルを自分で作成</div>
                         <div class="code-block">
                             <div class="code-title">.eleventy.js ファイル</div>
                             <div class="code-content">module.exports = function(eleventyConfig) {
@@ -975,7 +976,7 @@
                     <div class="step-content">
                         <div class="step-title">📄 基本レイアウトテンプレートの作成</div>
                         
-                        <div class="step-subtitle">src/_includes/base.njk ファイルを作成</div>
+                        <div class="step-subtitle">src/_includes/base.njk ファイルを自分で作成</div>
                         <div class="code-block">
                             <div class="code-title">基本レイアウトテンプレート</div>
                             <div class="code-content"><!DOCTYPE html>
@@ -1034,7 +1035,7 @@
 </html></div>
                         </div>
 
-                        <div class="step-subtitle">src/index.md ファイルを作成（トップページ）</div>
+                        <div class="step-subtitle">src/index.md ファイルを自分で作成（トップページ）</div>
                         <div class="code-block">
                             <div class="code-title">トップページ</div>
                             <div class="code-content">---
@@ -1053,7 +1054,7 @@ title: ホーム
 お楽しみください！</div>
                         </div>
 
-                        <div class="step-subtitle">src/about.md ファイルを作成（自己紹介ページ）</div>
+                        <div class="step-subtitle">src/about.md ファイルを自分で作成（自己紹介ページ）</div>
                         <div class="code-block">
                             <div class="code-title">自己紹介ページ</div>
                             <div class="code-content">---
@@ -1072,7 +1073,7 @@ title: About
 よろしくお願いします！</div>
                         </div>
 
-                        <div class="step-subtitle">src/posts/2024-01-01-first-post.md を作成（最初の記事）</div>
+                        <div class="step-subtitle">src/posts/2024-01-01-first-post.md を自分で作成（最初の記事）</div>
                         <div class="code-block">
                             <div class="code-title">最初のWebサイト記事</div>
                             <div class="code-content">---
@@ -1187,7 +1188,7 @@ date: 2024-01-01
                             <div class="code-content">git init</div>
                         </div>
                         <div class="code-block">
-                            <div class="code-title">.gitignoreファイルを作成</div>
+                            <div class="code-title">.gitignoreファイルを自分で作成</div>
                             <div class="code-content">echo "node_modules/
 _site/
 .DS_Store" > .gitignore</div>
