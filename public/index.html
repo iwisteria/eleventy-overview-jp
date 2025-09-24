@@ -20,21 +20,19 @@
         }
 
         .container {
-            max-width: min(1400px, 95vw);
-            margin: 0 auto;
+            max-width: 100%;
+            margin: 0;
             background: white;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.06);
-            border-radius: 24px;
+            box-shadow: none;
+            border-radius: 0;
             overflow: hidden;
-            margin-top: 24px;
-            margin-bottom: 24px;
-            border: 1px solid #e2e8f0;
+            border: none;
         }
 
         header {
             background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
             color: #1a1a1a;
-            padding: clamp(48px, 6vw, 80px) clamp(32px, 4vw, 64px) clamp(24px, 3vw, 48px) clamp(32px, 4vw, 64px);
+            padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 80px);
             text-align: center;
             border-bottom: 1px solid #e5e5e5;
         }
@@ -118,8 +116,10 @@
         }
 
         .content {
-            padding: clamp(32px, 5vw, 80px);
+            padding: clamp(40px, 8vw, 120px) clamp(20px, 5vw, 80px);
             background: #ffffff;
+            max-width: 1600px;
+            margin: 0 auto;
         }
 
         /* 概要ページ用スタイル */
@@ -544,35 +544,7 @@
             background: rgba(255,255,255,0.25);
         }
 
-        @media (max-width: 1200px) {
-            .container {
-                max-width: 95vw;
-            }
-
-            .content {
-                padding: 48px 32px;
-            }
-        }
-
         @media (max-width: 768px) {
-            .container {
-                margin: 16px;
-                border-radius: 20px;
-                max-width: calc(100vw - 32px);
-            }
-
-            .content {
-                padding: 32px 24px;
-            }
-
-            header {
-                padding: 48px 24px 24px 24px;
-            }
-
-            h1 {
-                font-size: 2.4em;
-            }
-
             .tab-buttons {
                 flex-direction: column;
             }
@@ -588,21 +560,6 @@
 
             .workflow-steps {
                 grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                margin: 8px;
-                max-width: calc(100vw - 16px);
-            }
-
-            .content {
-                padding: 24px 16px;
-            }
-
-            header {
-                padding: 32px 16px 16px 16px;
             }
         }
     </style>
