@@ -880,6 +880,18 @@
                         </div>
 
                         <div class="step-subtitle">4. 基本的なフォルダ構成の作成</div>
+
+                        <div style="background: #dbeafe; color: #1e40af; padding: 32px; border-radius: 12px; border-left: 4px solid #3b82f6; margin-bottom: 32px;">
+                            <h4 style="margin-bottom: 16px; color: #1e40af; font-size: 1.2em;">🤔 初心者向け解説</h4>
+                            <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 16px;">
+                                11tyプロジェクトでは、<span class="highlight">決められた名前のフォルダ</span>を作る必要があります。これらのフォルダは11tyが「どこに何があるか」を理解するための<strong>目印</strong>のような役割をします。
+                            </p>
+                            <p style="font-size: 1em; line-height: 1.8;">
+                                以下の手順で、これらのフォルダを実際に作成していきましょう。コマンドを使う方法とVS Codeで作る方法、両方を説明します！
+                            </p>
+                        </div>
+
+                        <div class="step-subtitle">完成予定のフォルダ構成</div>
                         <div class="file-structure">my-website/
 ├── src/
 │   ├── _includes/         # テンプレート
@@ -891,6 +903,45 @@
 ├── _site/                 # 生成されるサイト
 ├── .eleventy.js           # 11ty設定ファイル
 └── package.json</div>
+
+                        <div class="step-subtitle">方法1: コマンドでフォルダを作成（推奨）</div>
+                        <div class="code-block">
+                            <div class="code-title">必要なフォルダを一括作成</div>
+                            <div class="code-content">mkdir -p src/_includes src/posts</div>
+                        </div>
+                        <div class="info">
+                            <strong>💡 コマンド解説：</strong><br>
+                            • <code>mkdir</code>：フォルダ作成コマンド<br>
+                            • <code>-p</code>：親フォルダも一緒に作成（srcフォルダがない場合も自動作成）<br>
+                            • <code>src/_includes src/posts</code>：2つのフォルダを同時に作成
+                        </div>
+
+                        <div class="step-subtitle">方法2: VS Codeでフォルダを作成</div>
+                        <ol style="margin-left: 30px; padding-left: 20px;">
+                            <li style="margin-bottom: 16px;">
+                                <strong>VS Codeでプロジェクトフォルダを開く</strong><br>
+                                VS Codeを起動 → "File" → "Open Folder" → 作成したmy-websiteフォルダを選択
+                            </li>
+                            <li style="margin-bottom: 16px;">
+                                <strong>srcフォルダを作成</strong><br>
+                                左のファイルエクスプローラーで右クリック → "New Folder" → "src" と入力
+                            </li>
+                            <li style="margin-bottom: 16px;">
+                                <strong>_includesフォルダを作成</strong><br>
+                                srcフォルダを右クリック → "New Folder" → "_includes" と入力
+                            </li>
+                            <li style="margin-bottom: 16px;">
+                                <strong>postsフォルダを作成</strong><br>
+                                srcフォルダを右クリック → "New Folder" → "posts" と入力
+                            </li>
+                        </ol>
+
+                        <div class="warning">
+                            <strong>⚠️ 重要な注意点：</strong><br>
+                            • <code>_includes</code> フォルダ名の最初に<strong>アンダースコア（_）</strong>を忘れずに！<br>
+                            • <code>_site</code> フォルダは11tyが自動作成するので、手動で作る必要はありません<br>
+                            • フォルダ名のスペルミスに注意してください（postsの「s」を忘れがちです）
+                        </div>
 
                         <div class="step-subtitle">5. 11ty設定ファイルの作成</div>
                         <div class="code-block">
